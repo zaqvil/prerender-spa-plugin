@@ -46,7 +46,7 @@ module.exports = {
     }
   },
   devServer: {
-    historyApiFallback: true,
+    // historyApiFallback: true,
     noInfo: false,
   },
   devtool: '#eval-source-map',
@@ -75,7 +75,7 @@ if (process.env.NODE_ENV === 'production') {
         inject: {
           foo: 'bar'
         },
-        headless: true,
+        headless: false,
         renderAfterDocumentEvent: 'render-event'
       })
     })
